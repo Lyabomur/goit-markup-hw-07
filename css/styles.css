@@ -473,7 +473,7 @@ body {
 
 /* секція перваги*/
 
-.benefits__container{
+.benefits-container{
     margin: 0 auto;
     padding: 0 15px;
     width: 1200px;
@@ -548,7 +548,7 @@ body {
 .work{
     padding-top: 0;}
 
-.work__container{
+.work-container{
     margin: 0 auto;
     padding: 0 15px;
     width: 1200px;
@@ -613,18 +613,19 @@ body {
     background: rgba(47, 48, 58, 0.8);
 }
 
-
-
-
-
-
 /* команда */
 
 .team {
     background-color: var(--fon-button);
 }
 
-.team-title {
+.team-container{
+    margin: 0 auto;
+    padding: 0 15px;
+    width: 1200px;
+}
+
+.team__title {
     margin-top: 0;
     margin-bottom: 50px;
 
@@ -637,11 +638,15 @@ body {
     color: var(--main-color)
 }
 
-.team .list {
+.team__list {
     display: flex;
-}
+    list-style: none;  
+    margin: 0;
+    padding: 0;
+} 
 
-.team-img {
+
+.team__img {
     background-color: var(--bgc-white);
     margin-right: 30px;
     width: calc((100% -90px) / 4);
@@ -652,7 +657,7 @@ body {
     transition: box-shadow 250ms var(--time-function);
 }
 
-.team-img:nth-child(4n) {
+.team__img:nth-child(4n) {
     margin-right: 0;
 }
 
@@ -660,7 +665,7 @@ body {
     padding: 30px;
 }
 
-.team-name {
+.img-data__name {
     margin: 0;
     margin-bottom: 10px;
     /* justify-content: start; */
@@ -673,7 +678,7 @@ body {
     color: var(--main-color)
 }
 
-.team-text {
+.img-data__text {
     margin: 0;
 
     font-family: inherit;
@@ -684,24 +689,27 @@ body {
     color: var(--second-text-color)
 }
 
-.social-list{
+.team__social-list{
     display: inline-flex;
     width: 207px;
     height: 44px;
     align-items: center;
     margin-top: 16px;
+    list-style: none;
+    text-decoration: none;
+    padding: 0;
 }
 
-.social-item:not(:last-child) {
+.team__social-item:not(:last-child) {
     margin-right: 10px;
 }
 
-.social-item{
+.team__social-item{
     display: inline-flex;
     align-items: center;
 }
 
-.social-link{
+.team__social-link{
     display: flex;
     width: 44px;
     height: 44px;
@@ -716,13 +724,13 @@ body {
     background-color 250ms var(--time-function);
 }
 
-.social-link:hover,
-.social-link:focus{
+.team__social-link:hover,
+.team__social-link:focus{
     background-color: var(--acent-color);
     color: #ffffff;
 }
 
-.team-icon{
+.team__icon{
     fill: currentColor;
 }
 
