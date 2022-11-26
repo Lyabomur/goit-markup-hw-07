@@ -168,6 +168,7 @@ body {
 }
 
 .contact-nav__link {
+    display: block;
     font-weight: 500;
     font-size: 14px;
     line-height: calc(16 / 14);
@@ -182,7 +183,6 @@ body {
 }
 
 .contact-nav__icon {
-    display: inline-block;
     margin-right: 10px;
     fill: currentColor;
     vertical-align: -0.95px;
