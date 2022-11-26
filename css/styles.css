@@ -213,7 +213,13 @@ body {
     padding-bottom: 200px;
 }
 
-.hero-title {
+.hero-container{
+    margin: 0 auto;
+    padding: 0 15px;
+    width: 1200px;
+}
+
+.hero__title {
     margin: 0 auto 40px;
 
     font-weight: 900;
@@ -226,12 +232,12 @@ body {
 }
 
 
-.hero-button:hover,
-.hero-button:focus {
+.hero__button:hover,
+.hero__button:focus {
     background-color: var(--bgc-button-hero);
 }
 
-.hero-button {
+.hero__button {
     align-items:center;
     text-align: center;
     font-weight: 700;
@@ -248,7 +254,6 @@ body {
     text-decoration: none;
     transition: box-shadow 250ms var(--time-function),
     background-color 250ms var(--time-function);
-    
 }
 
 
@@ -468,20 +473,46 @@ body {
 
 /* секція перваги*/
 
-.benefits .list {
-    display: flex;
+.benefits__container{
+    margin: 0 auto;
+    padding: 0 15px;
+    width: 1200px;
 }
 
-.benefits-item {
+/* прихований заголовок */
+
+.benefits__visually--hidden{
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
+.benefits__list {
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+    color: var(--main-color);
+    margin: 0;
+    padding: 0;
+}
+
+.benefits__item {
     display: block;
     width: 270px;
 }
 
-.benefits-item:not(:last-child) {
+.benefits__item:not(:last-child) {
     margin-right: 30px;
 }
 
-.benefits-box{
+.benefits__img{
     display:flex;
     justify-content: center;
     align-items: center;
@@ -491,11 +522,9 @@ body {
 }
 
 
-.benefits-title {
-
+.benefits__title {
     margin-top: 0;
     margin-bottom: 10px;
-
     font-weight: 700;
     font-size: 14px;
     line-height: calc(16 / 14);
@@ -504,7 +533,7 @@ body {
     color: var(--main-color)
 }
 
-.benefits-text {
+.benefits__text {
     font-size: 14px;
     line-height: calc(24 / 14);
     letter-spacing: 0.03em;
@@ -516,11 +545,16 @@ body {
 
 /* секція роботи */
 
-.work {
-    padding-top: 0;
+.work{
+    padding-top: 0;}
+
+.work__container{
+    margin: 0 auto;
+    padding: 0 15px;
+    width: 1200px;
 }
 
-.work-title {
+.work__title {
     margin-top: 0;
     margin-bottom: 50px;
 
@@ -532,21 +566,32 @@ body {
     color: var(--main-color)
 }
 
-.work .list {
+.work-list {
     display: flex;
+    list-style: none;
+    text-decoration: none;
+    color: var(--main-color);
+    margin: 0;
+    padding: 0;
 }
 
-.work-item {
+.work-list__item {
     position: relative;
     margin-right: 30px;
     width: calc((100% -60px) / 3);
 }
 
-.work-item:nth-child(3n) {
+.work-list__item:nth-child(3n) {
     margin-right: 0;
 }
 
-.list-title{
+.work-list__img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.work-list__title{
     position:absolute;
     display: flex;
     align-items: center;
@@ -571,28 +616,7 @@ body {
 
 
 
-/* Фотографії */
 
-.img {
-    display: block;
-    width: 100%;
-    height: auto;
-}
-
-/* прихований заголовок */
-
-.visually-hidden {
-    position: absolute;
-    white-space: nowrap;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    border: 0;
-    padding: 0;
-    clip: rect(0 0 0 0);
-    clip-path: inset(50%);
-    margin: -1px;
-}
 
 /* команда */
 
