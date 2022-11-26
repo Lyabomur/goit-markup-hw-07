@@ -948,7 +948,7 @@ body {
 
 /* Футер */
 
-.footer-box{
+.footer-panel{
     display: flex;
     align-items: baseline;
 }
@@ -958,7 +958,7 @@ body {
     padding: 60px 0;
 }
 
-.footer-logo {
+.footer__logo {
     display: block;
     margin-bottom: 20px;
 
@@ -971,32 +971,37 @@ body {
     text-decoration: none;
 }
 
-.footer-logo-two {
+.footer__logo--color {
     color: var(--bgc-white);
 }
 
 /* футер адреса */
 
-.address {
+.address__list{
+    list-style: none;
+    text-decoration: none;
+    color: var(--main-color);
+    margin: 0;
+    padding: 0;
     font-style: normal;
     font-family: "Roboto"
 }
 
-.address-item {
+.address__item {
     margin-bottom: 9px;
 }
 
 
-.address-towen-link:hover,
-.address-towen-link:focus,
-.address-mail-link:hover,
-.address-mail-link:focus,
-.address-tel-link:hover,
-.address-tel-link:focus {
+.address__link:hover,
+.address__link:focus,
+.address__mail:hover,
+.address__mail:focus,
+.address__tel:hover,
+.address__tel:focus {
     color: var(--acent-color);
 }
 
-.address-towen-link {
+.address__link {
     font-size: 14px;
     line-height: calc(24 / 14);
     letter-spacing: 0.03em;
@@ -1006,7 +1011,7 @@ body {
     transition: color 250ms var(--time-function);
 }
 
-.address-mail-link {
+.address__mail{
     font-size: 14px;
     line-height: calc(24 / 14);
     letter-spacing: 0.03em;
@@ -1016,7 +1021,7 @@ body {
     transition: color 250ms var(--time-function);
 }
 
-.address-tel-link {
+.address__tel{
     font-size: 14px;
     line-height: calc(24 / 14);
     letter-spacing: 0.03em;
