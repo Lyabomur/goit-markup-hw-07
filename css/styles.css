@@ -291,7 +291,7 @@ body {
     border-radius: 4px;
 }
 
-.modal-close{
+.modal__close{
     position: absolute;
     height: 30px;
     top: 8px;
@@ -305,14 +305,14 @@ body {
     background-color 250ms var(--time-function);
 }
 
-.modal-button{
+.modal__button{
    display: flex;
    justify-content: center;
    align-items: center;
    border-radius: 50%;
 }
 
-.modal-close:hover{
+.modal__close:hover{
     fill: var(--acent-color);
     
 }
@@ -321,7 +321,7 @@ body {
   padding: 40px;
     }
 
-.form-title{
+.form__title{
   font-weight: 700;
   margin:0;
   margin-bottom: 12px;
@@ -348,7 +348,7 @@ body {
 }
 
 
-.input{
+.form-field__input{
   padding: 11px 42px;
   
   margin-top: 4px;
@@ -362,12 +362,12 @@ body {
   transition: border 250ms var(--time-function);
 }
 
-.input:focus,
-.input:hover{
+.form-field__input:focus,
+.form-field__input:hover{
     border:1px solid var(--acent-color);
 }
 
-.svg{
+.form-field__svg{
     position: absolute;
     top: 50%;
     left:12px;
@@ -375,7 +375,7 @@ body {
     transition: fill 250ms var(--time-function);
 }
 
-.input:focus + .svg{
+.form-field__input:focus + .form-field__svg{
     fill: var(--acent-color);
 }
 
@@ -402,7 +402,7 @@ body {
     border:1px solid var(--acent-color);
 }
 
-.checkbox-label{
+.checkbox{
   display: flex;
   align-items: center;
   width: 423px;
@@ -417,14 +417,14 @@ body {
   color:var(--second-text-color);
 }
 
-.checkbox{
+.checkbox__input{
     appearance: none;
     position: absolute;
     transition: border-color 250ms var(--time-function),
     background-color 250ms var(--time-function);
 }
 
-.checkbox:checked + .checkbox-icon{
+.checkbox__input:checked + .checkbox__icon{
     border-color: var(--acent-color);
     background-color: var(--acent-color);
     background-size: contain;
@@ -432,19 +432,19 @@ body {
 
 }
 
-.checkbox-icon{
+.checkbox__icon{
     border: 2px solid var(--main-color);
     border-radius: 2px;
     margin-right: 7px;
 }
 
-.form-span{
+.form__span{
     color: var(--acent-color);
     text-decoration: underline;
     margin-left: 4px;
 }
 
-.form-button{
+.form__button{
   width: 200px;
   height: 50px;
   margin-left: 124px;
@@ -466,8 +466,8 @@ body {
   background-color 250ms var(--time-function);
 }
 
-.form-button:hover,
-.form-button:focus {
+.form__button:hover,
+.form__button:focus {
     background-color: var(--bgc-button-hero);
 }
 
