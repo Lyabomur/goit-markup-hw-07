@@ -817,9 +817,6 @@ body {
     margin-bottom: 30px;
 }
 
-.cards-overlay p{
-    margin: 0;
-}
 .cards-overlay{
     position: relative;
     overflow: hidden;
@@ -829,6 +826,7 @@ body {
     position: absolute;
     top: 0;
     left: 0;
+    margin: 0;
     padding-top: 63px;
     padding-right: 24px;
     padding-bottom: 63px;
